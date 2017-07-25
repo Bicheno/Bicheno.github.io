@@ -12,5 +12,5 @@ iframe.height = iframeWin.document.documentElement.scrollHeight || iframeWin.doc
 window.onload = function () {
   alert(1);
 var a = setIframeHeight(document.getElementById('view_frame_id'));
-    alert(a.toString());
+    alert(a);
 };
