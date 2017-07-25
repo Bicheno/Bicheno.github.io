@@ -7,11 +7,10 @@ title: test title
    <p>Welcome to my blogs!</p>
    <ul>
        {% for post in site.posts %}
-       <li><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></li>
+       <li><a target="view_frame" href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></li>
        {% endfor %}
    </ul>
 </div>
 <div style="display: block;width:500px;float:left;">
-   <p>hello</p>
+   <iframe name="view_frame" frameborder="0" src="http://v3.jiathis.com/code_mini/jiathis_utility.html" style="display: none;width:500px;"></iframe>
 </div>
-<iframe frameborder="0" src="http://v3.jiathis.com/code_mini/jiathis_utility.html" style="display: none;width:400px;float:left;"></iframe>
