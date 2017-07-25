@@ -4,3 +4,8 @@ title: test title
 ---
 <h1>Bicheno</h1>
 <p>Welcome to my blogs!</p>
+<ul>
+   {% for post in site.posts %}
+       <li><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></li>
+   {% endfor %}
+</ul>
