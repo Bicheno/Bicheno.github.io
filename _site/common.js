@@ -8,3 +8,7 @@ iframe.height = iframeWin.document.documentElement.scrollHeight || iframeWin.doc
 }
 }
 };
+
+window.onload = function () {
+setIframeHeight(document.getElementById('view_frame_id'));
+};
