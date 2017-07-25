@@ -2,10 +2,15 @@
 layout: default
 title: test title
 ---
-<h1>Bicheno</h1>
-<p>Welcome to my blogs!</p>
-<ul>
-   {% for post in site.posts %}
-       <li><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></li>
-   {% endfor %}
-</ul>
+<div style="display: block;width:300px;margin:100px;float:left;">
+   <h1>Bicheno</h1>
+   <p>Welcome to my blogs!</p>
+   <ul>
+       {% for post in site.posts %}
+       <li><a target="view_frame" href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></li>
+       {% endfor %}
+   </ul>
+</div>
+<div style="display: block;width:1000px;float:left;margin:10px;height="*";">
+   <iframe name="view_frame" frameborder="0" scrolling="no" style="display: block;width:1000px;height="*";"></iframe>
+</div>
