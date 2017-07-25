@@ -2,10 +2,13 @@
 layout: default
 title: test title
 ---
-<h1>Bicheno</h1>
-<p>Welcome to my blogs!</p>
-<ul>
-   {% for post in site.posts %}
+<div>
+   <h1>Bicheno</h1>
+   <p>Welcome to my blogs!</p>
+   <ul>
+       {% for post in site.posts %}
        <li><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></li>
-   {% endfor %}
-</ul>
+       {% endfor %}
+   </ul>
+</div>
+<iframe frameborder="0" src="http://v3.jiathis.com/code_mini/jiathis_utility.html" style="display: none;"></iframe>
